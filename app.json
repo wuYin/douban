@@ -1,0 +1,32 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/logs/logs",
+        "pages/books/books"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "WeChat",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "color": "silver",
+        "selectedColor": "green",
+        "backgroundColor": "white",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "Books",
+                "iconPath": "./images/icons/icon_books.png",
+                "selectedIconPath": "./images/icons/icon_books.png"
+            },
+            {
+                "pagePath": "pages/logs/logs",
+                "text": "Movies",
+                "iconPath": "./images/icons/icon_movies.png",
+                "selectedIconPath": "./images/icons/icon_movies.png"
+            }
+        ]
+    }
+}

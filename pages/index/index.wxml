@@ -1,0 +1,38 @@
+<!-- ./index/index -->
+
+<view class="banner">
+
+  <swiper class="swiper" autoplay="{{true}}" indicator-dots="{{true}}" interval="2000">
+    <swiper-item>
+      <image src="../../images/swipers/1.png"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../../images/swipers/2.png"></image>
+    </swiper-item>
+  </swiper>
+
+  <navigator class="search">
+    <view class="search-box">
+      <image class="search-icon" src="../../images/icons/icon_search.png"></image>
+    </view>
+    <text class="search-input"> 搜索书名 作者 ISBN号</text>
+    <text class="search-button"> 搜索 </text>
+  </navigator>
+
+</view>
+
+<scroll-view class="scroller" scroll-y="{{true}}">
+    <view class="content">
+         <view class="contetn-title">
+            <text>书籍推荐</text>
+            <text class="contetn-title-link">换一批</text>
+         </view>
+    
+        <view class="content-list">
+            <import src="../templates/recommend.wxml" />
+            <template is="recommend" data="{{bookLists: books}}"></template>
+        </view>
+    
+    </view>
+
+</scroll-view>

@@ -1,0 +1,17 @@
+
+/* 为图书条目添加样式 */
+.book-item {
+    margin: 20rpx;
+    width: 60rpx;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.book-item-img1 {
+    height: 20rpx;
+}
+
+.book-item-img2 {
+    height: 20rpx;
+}

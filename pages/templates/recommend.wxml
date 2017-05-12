@@ -1,0 +1,21 @@
+
+<!-- 书籍列表模板页面 -->
+
+<template name="recommend">
+
+    <view class="book" wx:for="{{bookLists}}">
+    
+         <navigator url="">           
+            <view class="book-item">
+                <image class="book-item-cover" src="../../images/book.png"></image>
+                <text class="book-item-name">书名</text>
+                <view class="book-item-rating">
+                      <image class="book-item-stars" src="../../images/star4.5.png"></image>
+                      <text class="book-item-rates">4.5分</text>
+                </view>
+            </view>
+         </navigator>
+
+    </view>
+
+</template>

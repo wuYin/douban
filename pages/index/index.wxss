@@ -1,0 +1,143 @@
+/**index.wxss**/
+
+
+/* 设置导航页 */
+.banner {
+    position: relative;
+    height: 400rpx;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* 设置滑块 */
+.swiper {
+    width: 100%;
+    height: 420rpx;
+}
+
+.swiper image {
+    width: 100%;
+}
+
+/* 设置搜索框 */
+.search {
+    position: absolute;
+    top: 250rpx;
+    height: 80rpx;
+    border: 1px solid silver;
+    border-radius: 16rpx;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.1);
+    opacity: 1;
+}
+.search-box {
+    height: 80rpx;
+    width: 80rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-icon {
+    height: 40rpx;
+    width: 40rpx;
+}
+
+.search-input {
+    width: 500rpx;
+    height: 80rpx;
+    border: none;
+    padding-left: 20rpx;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.search-button {
+    width: 100rpx;
+    height: 80rpx; 
+    color: white;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* 设置内容滑块 */
+.scroller {
+    position: absolute;
+    width:  100%;
+    height: 1000rpx;
+    background-color: gray;
+}
+.content {
+    position: absolute;
+    margin: 5%; 
+    width:  90%;
+    height: 90%;
+    background-color: white ;
+}
+
+.contetn-title {
+    font-size: 30rpx;
+    padding: 20rpx;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contetn-title-link {
+    color: green;
+}
+
+/* 设置书籍列表 */
+.content-list {
+    background-color: white;
+    height: 100%;
+    padding: 20rpx 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.book {
+    width: 200rpx;
+    padding-right:20rpx;
+    padding-bottom: 20rpx;
+}
+
+.book-item {
+    margin: 20rpx;
+    width: 190rpx;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.book-item-cover {
+   height: 300rpx;
+}
+
+.book-item-name {
+    margin: 10rpx 0;
+    font-size: 30rpx;
+}
+
+.book-item-stars {
+    height: 20rpx;
+    width: 120rpx;
+}
+.book-item-rates {
+    font-size: 25rpx;
+    padding-left: 9rpx;
+}
+
+
+
+
+
+
+
+
+
