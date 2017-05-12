@@ -3,15 +3,15 @@
 
 <template name="recommend">
 
-    <view class="book" wx:for="{{bookLists}}">
+    <view class="book" wx:for="{{bookList}}">
     
          <navigator url="">           
             <view class="book-item">
-                <image class="book-item-cover" src="../../images/book.png"></image>
-                <text class="book-item-name">书名</text>
+                <image class="book-item-cover" src="{{item.images.small}}"></image>
+                <text class="book-item-name">{{item.title}}</text>
                 <view class="book-item-rating">
-                      <image class="book-item-stars" src="../../images/star4.5.png"></image>
-                      <text class="book-item-rates">4.5分</text>
+                      <image class="book-item-stars" src="{{item.starSrc}}"></image>
+                      <text class="book-item-rates">{{item.rating.average}}</text>
                 </view>
             </view>
          </navigator>

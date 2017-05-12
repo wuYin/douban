@@ -25,12 +25,12 @@
     <view class="content">
          <view class="contetn-title">
             <text>书籍推荐</text>
-            <text class="contetn-title-link">换一批</text>
+            <text class="contetn-title-link" bindtap="refreshData">换一批</text>
          </view>
     
         <view class="content-list">
             <import src="../templates/recommend.wxml" />
-            <template is="recommend" data="{{bookLists: books}}"></template>
+            <template is="recommend" data="{{bookList: bookList}}"></template>
         </view>
     
     </view>
