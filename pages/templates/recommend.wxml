@@ -5,7 +5,7 @@
 
     <view class="book" wx:for="{{bookList}}">
     
-         <navigator url="">           
+         <navigator url="../bookInfo/info?id={{item.id}}">           
             <view class="book-item">
                 <image class="book-item-cover" src="{{item.images.small}}"></image>
                 <text class="book-item-name">{{item.title}}</text>

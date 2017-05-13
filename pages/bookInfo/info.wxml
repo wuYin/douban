@@ -1,0 +1,39 @@
+
+<!-- 图书具体信息 -->
+
+<scroll-view class="scoller" scroll-y="{{true}}">
+
+    <view class="cover">
+        <view class="cover-bg"></view>
+        <image class="cover-img" src="{{info.images.large}}"></image>
+    </view>
+
+
+    <view class="info">
+        <view class="info-text">
+            <text class="info-text-title">{{info.title}}</text>
+            <text class="info-text-author">{{info.author}}</text>
+            <text class="info-text-publish">{{info.publisher}}</text>
+            <text class="info-text-publishDate">{{info.pubdate}}</text>
+            <view class="info-tags">
+                <text>{{info.tags[0].title}}</text>
+                <text>{{info.tags[1].title}}</text>
+            </view>
+        </view>
+        <view class="info-star">
+            <view class="info-star-counts">{{score}}</view>
+            <image class="info-star-img" src="{{info.starSrc}}"></image>
+        </view>
+    </view>
+
+
+    <view class="content">
+         <text class="content-tip">图书简介</text>
+         <view class="content-text">
+              <view>{{info.summary}}</view>
+         </view>
+    </view>
+
+</scroll-view>
+
+

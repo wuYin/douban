@@ -18,8 +18,8 @@ function requestData(url, requestArgs, successFunc, errorFunc, completeFunc) {
 
 // 封装请求方法为接口
 // 获取图书详细信息
-function getBookById(requestArgs, successFunc, errorFunc, completeFunc) {
-    requestData(apiMethods.getBookById, requestArgs, successFunc, errorFunc, completeFunc);
+function getBookById(bookId, requestArgs, successFunc, errorFunc, completeFunc) {
+    requestData(apiMethods.getBookById+bookId, "", successFunc, errorFunc, completeFunc);
 }
 
 // 搜索图书
