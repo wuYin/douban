@@ -5,7 +5,8 @@ var requests = require("../../utils/util.js");
 var starUtils = require("../../utils/star.js");
 Page({
     data: {
-        typeId: 100
+        typeId: 697,
+        series: [660, 697, 1163, 5907, 6628, 9931, 13000, 18507]      // 计算机系列
     },
 
     onLoad: function () {
@@ -37,16 +38,20 @@ Page({
     // 处理刷新数据 
     refreshData: function() {
         var that = this;
-        var random = Math.random();
-        var randomId = Math.ceil(random * 1000).toString();
+        var randIndex = Math.floor(Math.random() * 8);      // 丛书数目
+        var randomId = that.data.series[randIndex];
+        
         console.log(randomId)
+        
+        
         this.setData({
             typeId: randomId
         })
 
         wx.showToast({
             title: '数据拉取中',
-            icon: 'loading'
+            icon: 'loading',
+            duration: 500
         })
 
         requests.getBookList(that.data.typeId, '',

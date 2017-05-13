@@ -2,12 +2,15 @@
 
 <view class="banner">
 
-  <swiper class="swiper" autoplay="{{true}}" indicator-dots="{{true}}" interval="2000">
+  <swiper class="swiper" autoplay="{{true}}" indicator-dots="{{true}}" interval="4000">
     <swiper-item>
-      <image src="../../images/swipers/1.png"></image>
+      <image src="../../images/swipers/1.jpg"></image>
     </swiper-item>
     <swiper-item>
       <image src="../../images/swipers/2.png"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../../images/swipers/1.png"></image>
     </swiper-item>
   </swiper>
 
