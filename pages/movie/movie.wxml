@@ -1,0 +1,60 @@
+<!--pages/movie/movie.wxml-->
+
+
+<scroll-view class="scoller" scroll-y="{{true}}">
+
+  <view class="search">
+    <view class="search-box">
+      <image class="search-icon" src="../../images/icons/icon_search.png"></image>
+    </view>
+    <text class="search-input">搜索 电影 电视剧 演员 导演</text>
+    <text class="search-button"> 搜索 </text>
+  </view>
+
+  <view class="showing">
+    <view class="showing-nav">
+      <text class="showing-nav-title">正在热映</text>
+      <text class="showing-nav-more">更多></text>
+    </view>
+    <view class="showing-movies">
+      <import src="../templates/movielist.wxml" />
+      <scroll-view class="movies-scoller" scroll-x="{{true}}">
+        <block wx:for="{{showingMovies}}" wx:for-item="item">
+          <template is="movielist" data="{{...item}}"></template>
+        </block>
+      </scroll-view>
+    </view>
+  </view>
+
+  <view class="showing">
+    <view class="showing-nav">
+      <text class="showing-nav-title">正在热映</text>
+      <text class="showing-nav-more">更多></text>
+    </view>
+    <view class="showing-movies">
+      <import src="../templates/movielist.wxml" />
+      <scroll-view class="movies-scoller" scroll-x="{{true}}">
+        <block wx:for="{{comingMovies}}" wx:for-item="item">
+          <template is="movielist" data="{{...item}}"></template>
+        </block>
+      </scroll-view>
+    </view>
+  </view>
+
+  <view class="showing">
+    <view class="showing-nav">
+      <text class="showing-nav-title">高分电影推荐</text>
+      <text class="showing-nav-more">更多></text>
+    </view>
+    <view class="showing-movies">
+      <import src="../templates/movielist.wxml" />
+      <scroll-view class="movies-scoller" scroll-x="{{true}}">
+        <block wx:for="{{recommendMoives}}" wx:for-item="item">
+          <template is="movielist" data="{{...item}}"></template>
+        </block>
+      </scroll-view>
+    </view>
+  </view>
+
+
+</scroll-view>

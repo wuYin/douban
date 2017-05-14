@@ -1,4 +1,4 @@
-<!-- ./index/index -->
+    <!-- ./index/index -->
 
 <view class="banner">
 
@@ -10,7 +10,10 @@
       <image src="../../images/swipers/2.png"></image>
     </swiper-item>
     <swiper-item>
-      <image src="../../images/swipers/1.png"></image>
+      <image src="../../images/swipers/3.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../../images/swipers/4.jpg"></image>
     </swiper-item>
   </swiper>
 

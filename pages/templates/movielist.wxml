@@ -1,0 +1,15 @@
+
+<!-- Movies页面中电影滑动部分 -->
+
+
+<template name="movielist">
+        <view class="showing-movies-item" data-id="{{id}}">
+            <image src="{{cover}}"></image>
+            <view class="showing-movies-item-title">{{title}}</view>
+            <view class="showing-movies-item-score">
+                <image src="{{starSrc}}"/>
+                <text>{{score}}</text> 
+            </view>
+            <view class="showing-movies-item-wants">{{counts}}人评分</view>
+        </view>
+</template>

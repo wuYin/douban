@@ -1,0 +1,129 @@
+/* pages/movie/movie.wxss */
+
+.scoller {
+    position: absolute;
+    height: 100%;
+}
+
+/* 配置首部搜索框直接复用 */
+.search {
+    position: relative;
+    top: 20rpx;
+    height: 80rpx;
+    border: 1px solid silver;
+    margin-bottom: 35rpx;
+    border-radius: 16rpx;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    opacity: 1;
+}
+.search-box {
+    height: 80rpx;
+    width: 80rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-icon {
+    height: 40rpx;
+    width: 40rpx;
+}
+
+.search-input {
+    width: 500rpx;
+    height: 80rpx;
+    border: none;
+    color: white;
+    padding-left: 20rpx;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.search-button {
+    width: 145rpx;
+    height: 80rpx;
+    border-top-right-radius: 16rpx;
+    border-bottom-right-radius: 16rpx;
+    color: white;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* 配置Movies 信息显示模块 */
+
+.showing {
+    border-top: 1rpx solid lightgray;
+    height: 500rpx;
+    margin-top: 70rpx;
+    padding: 0 30rpx;
+}
+
+
+.showing-nav {
+    margin: 30rpx 0;
+     font-size: 35rpx;
+    display: flex;
+    justify-content: space-between;
+}
+
+.showing-nav-more {
+    color: limegreen;
+}
+
+
+.showing-movies {
+    width: 100%;
+    height: 450rpx;
+}
+
+/* 滑动列表模板 */
+
+.movies-scoller {
+    height: 450rpx;
+    width: 100%;
+    white-space: nowrap
+}
+
+.showing-movies {
+    height: 500rpx;
+    font-size: 30rpx;
+    color: gray;
+}
+
+.showing-movies-item {
+    display: inline-block;
+    margin-right: 20rpx;
+}
+.showing-movies-item image{
+    margin-bottom: 5rpx;
+    height: 300rpx;
+    width: 200rpx;
+}
+
+.showing-movies-item-title {
+    color: gray;
+    font-size: 35rpx;
+    display: flex;
+    justify-content: center;
+}
+.showing-movies-item-score {
+    margin: 6rpx 0;
+    display: flex;
+    justify-content: space-around;
+}
+.showing-movies-item-score image{
+    width: 128rpx;
+    height: 24rpx;
+}
+
+.showing-movies-item-wants {
+    display: flex;
+    justify-content: center;
+}

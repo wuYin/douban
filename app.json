@@ -1,8 +1,8 @@
 {
     "pages": [
         "pages/index/index",
-        "pages/bookInfo/info",
-        "pages/logs/logs"
+        "pages/movie/movie",
+        "pages/bookInfo/info"
     ],
     "window": {
         "backgroundTextStyle": "light",
@@ -22,7 +22,7 @@
                 "selectedIconPath": "./images/icons/icon_books.png"
             },
             {
-                "pagePath": "pages/logs/logs",
+                "pagePath": "pages/movie/movie",
                 "text": "Movies",
                 "iconPath": "./images/icons/icon_movies.png",
                 "selectedIconPath": "./images/icons/icon_movies.png"
