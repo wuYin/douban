@@ -1,0 +1,28 @@
+<!-- 电影搜索页 -->
+
+<view class="search">
+  <view class="search-box">
+    <image class="search-icon" src="../../images/icons/icon_search.png"></image>
+    <input class="search-input" placeholder="搜索 电影 电视剧 演员 导演" bindinput="inputSearch" />
+    <text class="search-button"> 搜索 </text>
+  </view>
+
+
+  <view class="results">
+    <scroll-view class="scroller" scroll-y="{{true}}">
+      <block wx:for="{{results}}" wx:for-item="movie">
+        <view class="results-item" data-id="{{movie.id}}" bindtap="getMovieInfo">
+          <image class="results-item-poster" src="{{movie.images.small}}"></image>
+          <view class="results-item-intro">
+            <view class="title">{{movie.title}}</view>
+            <view class="info">{{movie.score}} 分 / {{movie.year}} / {{movie.types[0]}}
+                <text wx:if="{{movie.types[1]}}">、{{movie.types[1]}}</text>
+                <text wx:if="{{movie.types[2]}}">、{{movie.types[2]}}</text>
+            </view>
+          </view>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+
+</view>

@@ -76,6 +76,14 @@ function getRecommendMovies(successFunc, errorFunc, completeFunc) {
                 completeFunc);
 }
 
+// 搜索电影
+function getSearchResults(words, successFunc, errorFunc, completeFunc) {
+    requestData(APIURLs.searchUrl + words, "",
+                successFunc,
+                errorFunc,
+                completeFunc);
+}
+
 
 
 // 导出对外接口
@@ -88,5 +96,5 @@ module.exports = {
     getShowingMovies   : getShowingMovies,
     getComingMovies    : getComingMovies,
     getRecommendMovies : getRecommendMovies,
-    
+    getSearchResults   : getSearchResults,
 }
