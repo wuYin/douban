@@ -1,0 +1,164 @@
+
+/* 电影详情页 */
+
+.scroller {
+    width: 100%
+}
+
+/* 海报部分 */
+.poster {
+    padding: 30rpx 0 30rpx 0;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+}
+
+.poster image {
+    height: 400rpx;
+    width: 280rpx;
+}
+
+
+/* 基本信息部分 */
+.info {
+    height: 150rpx;
+    margin: 20rpx 0; 
+    display: flex;
+}
+
+.info-text {
+    width: 450rpx;
+    margin: 20rpx 0 0 40rpx;
+}
+
+.info-text text {
+    font-size: 30rpx;
+    color: darkgray;
+    display: block;
+}
+
+.info-text-title {
+    font-size: 45rpx;
+}
+
+.info-text-tags {
+    margin-top: 15rpx;
+    margin-bottom: 10rpx;
+}
+
+
+.info-star {
+    margin-top: 10rpx;
+    padding: 15rpx 0;
+    box-shadow: 0 0 10rpx 10rpx rgba(0, 0, 0, 0.1);
+}
+
+.info-star view {
+    display: flex;
+    justify-content: center;
+    font-size: 40rpx;
+    color: dimgray;
+}
+
+.info-star image {
+    display: block;
+    height: 30rpx;
+    width: 160rpx;
+    margin: 10rpx 0 0 10rpx;
+}
+
+.info-star text {
+    font-size: 28rpx;
+    color: cornflowerblue;
+}
+
+
+
+/* 剧情简介部分 */
+.content {
+    margin: 50rpx 40rpx;
+}
+
+.content text {
+    display: block;
+    color: gray;
+    font-size: 30rpx;
+    margin-bottom: 10rpx;
+}
+
+.content-seg-text {
+    font-size: 30rpx;
+    line-height: 32rpx;
+    color: black;
+    height: 128rpx;
+    text-indent: 2em;
+    display: block;
+    overflow: hidden;
+}
+
+.content-seg-all {
+    font-size: 30rpx;
+    line-height: 32rpx;
+    color: black;
+    height: 100%;
+    text-indent: 2em;
+    display: block;
+    overflow: hidden;
+}
+
+.content-seg view {
+    color: limegreen;
+    font-size: 30rpx;
+}
+
+
+
+/* 影人列表部分 */
+.actors {
+    margin: 40rpx 40rpx;
+}
+
+.actors text {
+    font-size: 30rpx;
+    color: gray;
+}
+
+.actors-info {
+    height: 350rpx;
+    white-space: nowrap;
+}
+
+.actor-info-block {
+    width: 180rpx;
+    display: inline-block;
+    margin-right: 20rpx;
+}
+
+.actor-info-block image {
+    margin-top: 20rpx;
+    height: 240rpx;
+    width: 180rpx;  
+}
+
+.actor-info-text  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.actor-info-text .type {
+    color: gray;
+    margin-top: 5rpx;
+    font-size: 25rpx;
+}
+
+.actor-info-text .name {
+    width: 180rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: gray;
+    margin-top: 5rpx;
+    font-size: 25rpx;
+}
+
+

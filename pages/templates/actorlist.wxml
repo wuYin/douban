@@ -1,0 +1,10 @@
+
+<!-- 电影详情页 影人信息模板 -->
+
+<template name="actor">
+          <view class="actor-info-block">
+              <image src="../../images/actor.png"></image>
+              <view>涅提·蒂瓦里</view>
+              <view>导演</view>
+          </view>
+</template>

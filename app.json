@@ -1,7 +1,9 @@
 {
     "pages": [
+        
+                "pages/movie/movie",
+        "pages/movieInfo/info",
         "pages/index/index",
-        "pages/movie/movie",
         "pages/bookInfo/info"
     ],
     "window": {

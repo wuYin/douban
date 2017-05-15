@@ -22,6 +22,14 @@ Page({
         this.getRecommendMovies();
     },
 
+    // 点击电影海报跳转到信息页
+    getMovieInfo: function(event) {
+        var movieId = event.currentTarget.dataset.id;
+        wx.navigateTo({
+            url: '../movieInfo/info?movieId=' + movieId
+        })
+    },
+
     // 请求热映电影数据
     getShowingMovies: function(){
         var that = this;

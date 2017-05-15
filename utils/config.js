@@ -2,6 +2,7 @@
 
 const booksAPI  = "https://api.douban.com/v2/book/";
 const moviesAPI = "https://api.douban.com/v2/movie/";
+const movieAPI  = "https://api.douban.com/v2/movie/subject/";
 
 const topMovieNums     = 12;    // 电影推荐栏显示的电影数
 const showingMovieNums = 12;    // 正在热映栏显示的电影数
@@ -19,6 +20,7 @@ module.exports = {
     topMovieNums     : topMovieNums,
     comingMovieNums  : comingMovieNums,
     showingMovieNums : showingMovieNums,
+    movieUrl       : movieAPI,
     top250Url      : moviesAPI + "top250",           // 电影推荐
     inThreaterUrl  : moviesAPI + "in_theaters",
     commingSoonUrl : moviesAPI + "coming_soon",

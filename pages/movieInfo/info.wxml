@@ -1,0 +1,57 @@
+<!-- /pages/movieInfo/info.wxml -->
+<!-- 电影的具体信息 -->
+
+<scroll-view class="scoller" scroll-y="{{true}}">
+    <view class="poster">
+        <image src="{{info.poster}}"></image>
+    </view>
+
+    <view class="info">
+         <view class="info-text">
+            <view class="info-text-title">{{info.title}}</view>
+            <text class="info-text-tags">类别：{{info.tags[0]}} / {{info.tags[1]}} / {{info.tags[2]}}</text>
+            <text class="info-text-country">国家：{{info.countries[0]}} / {{info.pubYear}}</text>
+        </view>
+        <view class="info-star">
+            <view>{{info.score}}</view>
+            <image src="{{info.starSrc}}"></image>
+            <text>{{info.counts}}人评分</text>
+        </view>
+    </view>
+
+    <view class="content">
+        <text class="content-title">剧情简介</text>
+        <view class="content-seg">
+            <text class="{{showAllFlag ? 'content-seg-all' : 'content-seg-text'}}">{{info.summary}}</text>
+            <block wx:if="{{!showAllFlag}}">
+                <view bindtap="showAllIntro">...（展开全部）</view>
+            </block>
+        </view>
+    </view>
+
+    <view class="actors">
+       <text>影人</text>
+       <scroll-view class="actors-info" scroll-x="{{true}}">
+          <block wx:for="{{info.directors}}">
+            <view class="actor-info-block">
+                <image src="{{item.avatars.large}}"></image>
+                <view class="actor-info-text">
+                    <text class="type">导演</text>
+                    <text class="name">{{item.name}}</text>
+                </view>
+            </view>
+          </block>
+
+          <block wx:for="{{info.actors}}">
+            <view class="actor-info-block">
+                <image src="{{item.avatars.large}}"></image>
+                <view class="actor-info-text">
+                    <text class="type">演员</text>
+                    <text class="name">{{item.name}}</text>
+                </view>
+            </view>
+          </block>
+
+        </scroll-view>
+    </view>
+</scroll-view>

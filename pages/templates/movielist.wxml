@@ -3,13 +3,15 @@
 
 
 <template name="movielist">
-        <view class="showing-movies-item" data-id="{{id}}">
+        <view class="showing-movies-item" bindtap="getMovieInfo" data-id="{{id}}">
             <image src="{{cover}}"></image>
-            <view class="showing-movies-item-title">{{title}}</view>
-            <view class="showing-movies-item-score">
-                <image src="{{starSrc}}"/>
-                <text>{{score}}</text> 
+            <view class="block">
+                <text class="title">{{title}}</text>
+                <view class="score">
+                    <image src="{{starSrc}}"/>
+                    <text>{{score}}</text> 
+                </view>
+                <view class="wants">{{counts}}人评分</view>
             </view>
-            <view class="showing-movies-item-wants">{{counts}}人评分</view>
         </view>
 </template>

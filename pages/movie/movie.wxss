@@ -106,24 +106,23 @@
     height: 300rpx;
     width: 200rpx;
 }
-
-.showing-movies-item-title {
+.showing-movies-item .block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.showing-movies-item .title {
+    width: 200rpx;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
     color: gray;
     font-size: 35rpx;
-    display: flex;
-    justify-content: center;
 }
-.showing-movies-item-score {
+.showing-movies-item .score {
     margin: 6rpx 0;
-    display: flex;
-    justify-content: space-around;
 }
-.showing-movies-item-score image{
+.showing-movies-item .score image{
     width: 128rpx;
     height: 24rpx;
-}
-
-.showing-movies-item-wants {
-    display: flex;
-    justify-content: center;
 }
