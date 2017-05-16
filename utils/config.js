@@ -3,8 +3,11 @@
 const booksAPI  = "https://api.douban.com/v2/book/";
 const moviesAPI = "https://api.douban.com/v2/movie/";
 const movieAPI  = "https://api.douban.com/v2/movie/subject/";
-const searchAPI = "https://api.douban.com/v2/movie/search";
 const actorAPI  = "https://api.douban.com/v2/movie/celebrity/";     // 影人信息
+
+
+const searchMovieAPI = "https://api.douban.com/v2/movie/search";
+const searchBookAPI  = "https://api.douban.com/v2/book/search";
 
 
 const topMovieNums     = 12;    // 电影推荐栏显示的电影数
@@ -18,6 +21,9 @@ module.exports = {
     getBookList : booksAPI + "series/typeId/books",
     searchBook  : booksAPI + "search",
 
+    // Book搜索数据
+    searchBookUrl  : searchBookAPI + '?q=',
+
     // Movies数据请求接口
     topMovieNums     : topMovieNums,
     comingMovieNums  : comingMovieNums,
@@ -29,5 +35,5 @@ module.exports = {
     commingSoonUrl : moviesAPI + "coming_soon",
 
     // Movies搜索接口
-    searchUrl : searchAPI + '?q=',
+    searchMovieUrl: searchMovieAPI + '?q=',
 }

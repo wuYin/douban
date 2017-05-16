@@ -27,8 +27,8 @@ function getBookById(bookId, requestArgs, successFunc, errorFunc, completeFunc) 
 }
 
 // 搜索图书
-function searchBook(requestArgs, successFunc, errorFunc, completeFunc) {
-    requestData(APIURLs.searchBook, requestArgs, 
+function getSearchBooks(words, successFunc, errorFunc, completeFunc) {
+    requestData(APIURLs.searchBookUrl + words, "", 
                 successFunc,
                 errorFunc,
                 completeFunc);
@@ -97,7 +97,7 @@ function getRecommendMovies(successFunc, errorFunc, completeFunc) {
 
 // 搜索电影
 function getSearchResults(words, successFunc, errorFunc, completeFunc) {
-    requestData(APIURLs.searchUrl + words, "",
+    requestData(APIURLs.searchMovieUrl + words, "",
                 successFunc,
                 errorFunc,
                 completeFunc);
@@ -108,8 +108,8 @@ function getSearchResults(words, successFunc, errorFunc, completeFunc) {
 // 导出对外接口
 module.exports = {
     getBookById : getBookById,
-    searchBook  : searchBook,
     getBookList : getBookList,
+    getSearchBooks: getSearchBooks,
     
     getMovieById       : getMovieById,
     getActorById       : getActorById,

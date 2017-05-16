@@ -1,12 +1,12 @@
 {
     "pages": [
-        
+        "pages/index/index",
+        "pages/bookInfo/info",
+        "pages/bookSearch/search",
         "pages/movie/movie",
         "pages/actorInfo/info",
         "pages/movieInfo/info",
-        "pages/movieSearch/search",
-        "pages/index/index",
-        "pages/bookInfo/info"
+        "pages/movieSearch/search"
     ],
     "window": {
         "backgroundTextStyle": "light",

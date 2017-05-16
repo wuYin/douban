@@ -22,7 +22,7 @@
     <view class="search-box">
       <image class="search-icon" src="../../images/icons/icon_search.png"></image>
     </view>
-    <text class="search-input"> 搜索书名 作者 ISBN号</text>
+    <navigator url="../bookSearch/search" class="search-input">搜索图书</navigator>
     <text class="search-button"> 搜索 </text>
   </navigator>
 

@@ -1,0 +1,31 @@
+<!-- 图书搜索页 -->
+
+<view class="search">
+  <view class="search-box">
+    <image class="search-icon" src="../../images/icons/icon_search.png"></image>
+    <input class="search-input" placeholder="搜索图书" input="{{inputValues}}"
+           bindinput="inputSearch" />
+    <block wx:if="{{clearFlag}}">
+        <text bindtap="clearInput"> X </text>
+    </block>
+    <text class="search-button" bindtap="backInput"> 取消 </text>
+  </view>
+
+
+  <view class="results">
+    <scroll-view class="scroller" scroll-y="{{true}}">
+      <block wx:for="{{results}}" wx:for-item="book">
+        <view class="results-item" data-id="{{book.id}}" bindtap="getBookInfo">
+          <image class="results-item-poster" src="{{book.images.small}}"></image>
+          <view class="results-item-intro">
+            <view class="title">{{book.title}}</view>
+            <view class="info">
+                {{book.score}} 分 / {{book.publisher}} / {{book.pubdate}} / {{book.price}}
+            </view>
+          </view>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+
+</view>
