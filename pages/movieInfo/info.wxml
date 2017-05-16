@@ -33,7 +33,7 @@
        <text>影人</text>
        <scroll-view class="actors-info" scroll-x="{{true}}">
           <block wx:for="{{info.directors}}">
-            <view class="actor-info-block">
+            <view class="actor-info-block"  data-id="{{item.id}}" bindtap="getActorInfo">
                 <image src="{{item.avatars.large}}"></image>
                 <view class="actor-info-text">
                     <text class="type">导演</text>
@@ -43,7 +43,7 @@
           </block>
 
           <block wx:for="{{info.actors}}">
-            <view class="actor-info-block">
+            <view class="actor-info-block" data-id="{{item.id}}" bindtap="getActorInfo">
                 <image src="{{item.avatars.large}}"></image>
                 <view class="actor-info-text">
                     <text class="type">演员</text>

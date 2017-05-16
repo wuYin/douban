@@ -15,3 +15,19 @@
             </view>
         </view>
 </template>
+
+<!-- 在演员个人页的影视作品列表 -->
+<template name="filmlist">
+    <view class="showing-movies-item" bindtap="getMovieInfo" data-id="{{subject.id}}">
+        <!--<block wx:if="{{index<=4}}">-->
+            <image src="{{subject.images.large}}"></image>
+            <view class="block">
+                <text class="title">{{subject.title}}</text>
+                <view class="score">
+                    <!--<image src="{{item[index+5]}}"/>-->
+                    <text>{{subject.rating.average}} 分</text> 
+                </view>
+            </view>
+        <!--</block>-->
+    </view>
+</template>

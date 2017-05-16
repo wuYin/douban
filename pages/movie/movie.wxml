@@ -7,7 +7,7 @@
     <view class="search-box">
       <image class="search-icon" src="../../images/icons/icon_search.png"></image>
     </view>
-    <text class="search-input">搜索 电影 电视剧 演员 导演</text>
+    <navigator url="../movieSearch/search" class="search-input" bindtap="">搜索影视</navigator>
     <text class="search-button"> 搜索 </text>
   </view>
 

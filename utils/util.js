@@ -44,7 +44,17 @@ function getBookList(typeId, requestArgs, successFunc, errorFunc, completeFunc) 
 
 
 
-// 封装请求方法为Movies接口
+/* 封装请求方法为Movies接口
+ *
+ * getMovieById()
+ * getActorById()
+ * getShowingMovies()
+ * getComingMovies()
+ * getRecommendMovies()
+ * getSearchResults()
+ * 
+ */
+
 // 获取电影详细信息
 function getMovieById(movieId, successFunc, errorFunc, completeFunc) {
     requestData(APIURLs.movieUrl + movieId, "",
@@ -52,6 +62,15 @@ function getMovieById(movieId, successFunc, errorFunc, completeFunc) {
                 errorFunc,
                 completeFunc);
 }
+
+// 获取影人详细信息
+function getActorById(actorId, successFunc, errorFunc, completeFunc) {
+    requestData(APIURLs.actorUrl + actorId, "",
+                successFunc,
+                errorFunc,
+                completeFunc);
+}
+
 // 正在热映
 function getShowingMovies(successFunc, errorFunc, completeFunc) {
     requestData(APIURLs.inThreaterUrl + "?start=0&&count=" + APIURLs.showingMovieNums, "",
@@ -93,6 +112,7 @@ module.exports = {
     getBookList : getBookList,
     
     getMovieById       : getMovieById,
+    getActorById       : getActorById,
     getShowingMovies   : getShowingMovies,
     getComingMovies    : getComingMovies,
     getRecommendMovies : getRecommendMovies,

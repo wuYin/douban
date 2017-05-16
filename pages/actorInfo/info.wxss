@@ -1,0 +1,144 @@
+
+/* 影人详情页 */
+
+.scroller {
+    width: 100%
+}
+
+/* 海报部分 */
+.poster {
+    padding: 30rpx 0 30rpx 0;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+}
+
+.poster image {
+    height: 400rpx;
+    width: 280rpx;
+}
+
+
+/* 基本信息部分 */
+.info {
+    height: 150rpx;
+    margin: 20rpx 0; 
+    display: flex;
+}
+
+.info-text {
+    width: 450rpx;
+    margin: 20rpx 0 0 40rpx;
+}
+
+.info-text text {
+    font-size: 30rpx;
+    color: darkgray;
+    display: block;
+}
+
+.info-text-title {
+    font-size: 45rpx;
+}
+
+.info-text-tags {
+    margin-top: 15rpx;
+    margin-bottom: 10rpx;
+}
+
+
+
+/* 剧情简介部分 */
+.content {
+    margin: 50rpx 40rpx;
+}
+
+.content text {
+    display: block;
+    color: gray;
+    font-size: 30rpx;
+    margin-bottom: 10rpx;
+}
+
+.content-seg {
+    font-size: 30rpx;
+    line-height: 32rpx;
+    color: green;
+    height: 128rpx;
+    text-indent: 2em;
+    display: block;
+    overflow: hidden;
+}
+
+
+
+
+/* 最受好评的作品部分 */
+.showing {
+    border-top: 1rpx solid lightgray;
+    height: 500rpx;
+    margin-top: 70rpx;
+    padding: 0 30rpx;
+}
+
+
+.showing-nav {
+    margin: 30rpx 0;
+     font-size: 35rpx;
+    display: flex;
+    justify-content: space-between;
+}
+
+.showing-nav-more {
+    color: limegreen;
+}
+
+
+.showing-movies {
+    width: 100%;
+    height: 450rpx;
+}
+
+/* 滑动列表模板 */
+
+.movies-scoller {
+    height: 450rpx;
+    width: 100%;
+    white-space: nowrap
+}
+
+.showing-movies {
+    height: 500rpx;
+    font-size: 30rpx;
+    color: gray;
+}
+
+.showing-movies-item {
+    display: inline-block;
+    margin-right: 20rpx;
+}
+.showing-movies-item image{
+    margin-bottom: 5rpx;
+    height: 300rpx;
+    width: 200rpx;
+}
+.showing-movies-item .block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.showing-movies-item .title {
+    width: 200rpx;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: gray;
+    font-size: 35rpx;
+}
+.showing-movies-item .score {
+    margin: 6rpx 0;
+}
+.showing-movies-item .score image{
+    width: 128rpx;
+    height: 24rpx;
+}

@@ -1,10 +1,21 @@
 
 <!-- 电影详情页 影人信息模板 -->
 
+<template name="director">
+            <view class="actor-info-block" data-id="{{id}}" bindtap="">
+                <image src="{{avatars.large}}"></image>
+                <view class="actor-info-text">
+                    <text class="type">导演</text>
+                    <text class="name">{{name}}</text>
+                </view>
+            </view>
+</template>
 <template name="actor">
-          <view class="actor-info-block">
-              <image src="../../images/actor.png"></image>
-              <view>涅提·蒂瓦里</view>
-              <view>导演</view>
-          </view>
+            <view class="actor-info-block" data-id="{{id}}" bindtap="">
+                <image src="{{avatars.large}}"></image>
+                <view class="actor-info-text">
+                    <text class="type">演员</text>
+                    <text class="name">{{name}}</text>
+                </view>
+            </view>
 </template>

@@ -1,0 +1,46 @@
+
+<!-- 影人详细信息页 -->
+
+<!-- /pages/movieInfo/info.wxml -->
+<!-- 电影的具体信息 -->
+
+<scroll-view class="scoller" scroll-y="{{true}}">
+    <view class="poster">
+        <image src="{{info.poster}}"></image>
+    </view>
+
+    <view class="info">
+         <view class="info-text">
+            <view class="info-text-title">{{info.name}}</view>
+            <text class="info-text-tags">英文名：{{info.enName}}</text>
+            <text class="info-text-country">出生地：{{info.born}}</text>
+        </view>
+    </view>
+
+    <view class="content">
+        <text class="content-title">个人简介</text>
+        <view class="content-seg" bindtap="getMoreIntro">更多信息请点击此链接</view>
+    </view>
+
+
+
+  <view class="showing">
+    <view class="showing-nav">
+      <text class="showing-nav-title">最受好评的5部作品</text>
+    </view>
+    <view class="showing-movies">
+        <import src="../templates/movielist.wxml" />
+        <scroll-view class="movies-scoller" scroll-x="{{true}}">
+            <block wx:for="{{info.films}}" wx:for-item="item" wx:for-index="index">
+                <template is="filmlist" data="{{...item}}"></template>
+            </block>
+        </scroll-view>
+    </view>
+  </view>
+
+
+</scroll-view>
+
+
+
+

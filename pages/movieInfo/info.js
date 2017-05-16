@@ -49,5 +49,13 @@ Page({
         this.setData({
             showAllFlag: true
         })
+    },
+
+    getActorInfo: function(event) {     // 跳转到影人信息页
+        // console.log(event)
+        var actorId = event.currentTarget.dataset.id;
+        wx.navigateTo({
+            url: '../actorInfo/info?actorId=' + actorId,
+        })
     }
 })
