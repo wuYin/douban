@@ -1,6 +1,5 @@
 
 <!-- 书籍列表模板页面 -->
-
 <template name="recommend">
 
     <view class="book" wx:for="{{bookList}}">
