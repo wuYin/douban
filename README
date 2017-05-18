@@ -1,6 +1,5 @@
-- 功能：查询和推荐豆瓣书籍 & 电影；信息来源 ©[豆瓣](https://www.douban.com/)  
+功能：查询和推荐豆瓣书籍 & 电影；信息来源 © <a href="https://www.douban.com">豆瓣</a>
 
+Demo演示：
 
-- 效果演示
-
- ![](./shots.gif)
+<img src="https://github.com/wuYinBest/DoubanInfo/blob/master/shots.gif" alt="效果演示"/>
