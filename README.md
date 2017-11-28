@@ -4,4 +4,4 @@
 
 Demo演示：
 
- ![image](https://ws1.sinaimg.cn/large/006tKfTcgy1flxyo67dx5g30da0mahdy.gif)
+ ![image](https://github.com/wuYinBest/DoubanInfo/raw/master/display.gif)
